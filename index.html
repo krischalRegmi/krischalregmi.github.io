@@ -2,80 +2,166 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Krischal's Portfolio</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krischal Regmi | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-		<h1>Welcome to Krischal's Portfolio</h1>
-		<nav>
-			<a href="#about">About Me</a>
-			<a href="#skills">Skills</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</nav>
-	</header>
-	<section id="about">
-		<h2>About Me</h2>
-		<img src="Images/IMG20240604122615.jpg" alt="Profile Picture" class="profile">
-		<p>My name is Krischal. I'm a high school student learning web development. I know basic HTML, CSS, and JavaScript. Besides that I am learning React and Node.js.</p>
-	</section>
-	<section id="skills">
-		<h2>Skills</h2>
-		<div class="skill-item">
-			<label for="html-skill">HTML</label>
-			<progress id="html-skill" value="90" max="100"></progress> 90%
-		</div>
-		<div class="skill-item">
-			<label for="css-skill">CSS</label>
-			<progress id="css-skill" value="80" max="100"></progress> 80%
-		</div>
-		<div class="skill-item">
-			<label for="js-skill">JS</label>
-			<progress id="js-skill" value="70" max="100"></progress> 70%
-		</div>
-		<div class="skill-item">
-			<label for="react-skill">React</label>
-			<progress id="react-skill" value="50" max="100"></progress> 50%
-		</div>
-	</section>
-	<section id="projects">
-		<h2>Projects</h2>
-		<div class="project-list">
-			<details>
-				<summary>Unit Converter</summary>
-				<p>It is an simple application to convert units of different quantities.</p>
-				<a href="https://krischalregmi.github.io/Unit-Converter/" target="_blank"> Link to project</a>
-			</details>
-			<details>
-				<summary>School Webpage</summary>
-				<p>It's a simple website of a school to display its facilities and other general information about the
-					school.</p>
-				<a href="https://krischalregmi.github.io/School-site/" target="_blank"> Link to project</a>
-			</details>
-			<details>
-				<summary>Guessing Game </summary>
-				<p>It is a simple game to guess a randomly generated number.</p>
-				<a href="https://mvunpp.mimo.run/index.html/" target="_blank"> Link to project</a>
-			</details>
-		</div>
-	</section>
-	<section id="contact">
-		<h2>Contact</h2>
-		<p>
-			E-mail: regmikrischal64@gmail.com
-			<br>
-			Facebook: <a href="https://www.facebook.com/krischal.regmi.9?mibextid=ZbWKwL">Krischal Regmi</a>
-			<br>
-			Instagram: @regmikrischal
-		</p>
-	</section>
-	<footer>
-		&copy; 2023 Krischal Regmi
-	</footer>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="hero-copy">
+                <p class="eyebrow">Portfolio</p>
+                <img src="Images/IMG20240604122615.jpg" alt="Photo of Krischal" class="profile mobile-only">
+                <h1>Hi, I’m Krischal</h1>
+                <p class="hero-text">A high school web developer building responsive websites with HTML, CSS,
+                    JavaScript, and learning React + Node.js.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="button primary">View projects</a>
+                    <a href="#contact" class="button secondary">Contact me</a>
+                </div>
+            </div>
+            <img src="Images/IMG20240604122615.jpg" alt="Photo of Krischal" class="profile desktop-only">
+        </div>
+        <nav class="site-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="panel">
+            <div class="section-heading">
+                <span>About Me</span>
+                <h2>Learning everyday, building for the web</h2>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>I'm a high school student passionate about web development. I build clean, responsive websites
+                        with HTML, CSS, and JavaScript, and I'm currently expanding my skills with React and Node.js. I
+                        enjoy turning ideas into working projects and learning new tools every week.</p>
+                    <ul class="about-list">
+                        <li>Current focus: React and Node.js</li>
+                        <li>Built projects: unit converter, school website, guessing game</li>
+                        <li>Goal: create interactive apps and improve code quality</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Quick facts</h3>
+                    <p><strong>Experience:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Learning:</strong> React, Node.js</p>
+                    <p><strong>Tools:</strong> VS Code, GitHub, Chrome DevTools</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="panel">
+            <div class="section-heading">
+                <span>Skills</span>
+                <h2>What I use today</h2>
+            </div>
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, responsive layout.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Frameworks</h3>
+                    <p>React basics, component structure, JSX.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Tools</h3>
+                    <p>GitHub, VS Code, Chrome DevTools.</p>
+                </article>
+                <article class="skill-card skill-progress">
+                    <h3>Skill levels</h3>
+                    <div class="skill-line">
+                        <span>HTML</span>
+                        <progress value="90" max="100"></progress>
+                    </div>
+                    <div class="skill-line">
+                        <span>CSS</span>
+                        <progress value="80" max="100"></progress>
+                    </div>
+                    <div class="skill-line">
+                        <span>JavaScript</span>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div class="skill-line">
+                        <span>React</span>
+                        <progress value="50" max="100"></progress>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="panel">
+            <div class="section-heading">
+                <span>Projects</span>
+                <h2>Recent work</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Task Flow</h3>
+                    <p>A simple application to add ToDo lists and manage them with different priorities and categories. It is created by VibeCoding.
+                    </p>
+                    <p class="project-meta">HTML · CSS · JavaScript · React · NodeJS</p>
+                    <a href="https://krischalregmi.github.io/Unit-Converter/" target="_blank"
+                        rel="noopener noreferrer">View live</a>
+                </article>
+                <article class="project-card">
+                    <h3>Unit Converter</h3>
+                    <p>A simple tool to convert units across different measurements with a clean interface.</p>
+                    <p class="project-meta">HTML · CSS · JavaScript</p>
+                    <a href="https://krischalregmi.github.io/Unit-Converter/" target="_blank"
+                        rel="noopener noreferrer">View live</a>
+                </article>
+                <article class="project-card">
+                    <h3>School Website</h3>
+                    <p>A school website showcasing facilities, classes, and general information in a modern layout.</p>
+                    <p class="project-meta">HTML · CSS · JavaScript</p>
+                    <a href="https://krischalregmi.github.io/School-site/" target="_blank"
+                        rel="noopener noreferrer">View live</a>
+                </article>
+                <article class="project-card">
+                    <h3>Guessing Game</h3>
+                    <p>A number guessing game with interactive feedback and a polished user experience.</p>
+                    <p class="project-meta">HTML · CSS · JavaScript</p>
+                    <a href="https://mvunpp.mimo.run/index.html" target="_blank" rel="noopener noreferrer">View live</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="panel">
+            <div class="section-heading">
+                <span>Contact</span>
+                <h2>Let’s connect</h2>
+            </div>
+            <p>If you'd like to collaborate or talk about a project, email me or reach out on social media.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <a href="mailto:regmikrischal64@gmail.com">regmikrischal64@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/krischal.regmi.9?mibextid=ZbWKwL" target="_blank"
+                        rel="noopener noreferrer">facebook.com/krischal.regmi.9</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Instagram</h3>
+                    <p>@regmikrischal</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        &copy; 2026 Krischal Regmi
+    </footer>
 </body>
 
 </html>
