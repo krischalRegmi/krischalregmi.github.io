@@ -199,10 +199,6 @@ button:hover {
     min-height: 160px;
 }
 
-.skill-progress {
-    grid-column: span 3;
-}
-
 .skill-line {
     display: grid;
     grid-template-columns: auto 1fr;
